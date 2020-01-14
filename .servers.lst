@@ -1,0 +1,5 @@
+S54034 172.21.114.12 trust-kubix
+S54034 172.21.114.15 POC-kubix
+S54034 172.21.114.16 myUnifi-kubix
+ubuntu 172.31.210.18 Jumpbox 
+S54034 172.21.114.10 Infra
