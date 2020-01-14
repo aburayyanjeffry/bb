@@ -1,8 +1,9 @@
 # bb
-A ssh session manager for Linux
+bb is a ssh session manager for Linux or any OS which has bash
 
 # Install
-1. move servers.lst.example to .servers.lst
+1. download the bb script to your machine
+2. download servers.lst.example to the same location with bb and rename it to .servers.lst
 3. populate the .servers.lst with username, ip and a one word description
    eg:
    ```
@@ -12,5 +13,7 @@ A ssh session manager for Linux
 # Usage
 1. execute ./bb
 2. select the number or the desired server to ssh into it
+
+
    
    
