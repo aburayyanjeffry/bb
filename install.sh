@@ -14,7 +14,7 @@ case $OS in
 
 	 "Android")
            echo "Android rocks"
-           if [[ -f "/data/data/com.termux/files/usr/bin/" ]]
+           if [[ -e "/data/data/com.termux/files/usr/bin/" ]]
 	   then
 	     echo "cp bb /data/data/com.termux/files/usr/bin/"
 	     cp bb /data/data/com.termux/files/usr/bin/
