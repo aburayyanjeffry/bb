@@ -13,9 +13,9 @@ Curl
   curl https://github.com/aburayyanjeffry/bb/raw/master/bb.zip -OJL
   ```
 # Install
-1. download the bb script to your machine
-2. download servers.lst.example to the same location with bb and rename it to .servers.lst
-3. populate the .servers.lst with username, ip and a one word description
+1. Execute install.sh
+2. Create .servers.lst at your home directory. See "servers.lst.example" for reference
+3. Populate the .servers.lst with username, ip and a one word description
    eg:
    ```
    user1 192.168.1.1 router1
