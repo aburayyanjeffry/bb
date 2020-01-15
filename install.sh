@@ -3,8 +3,7 @@
 # Date: 1/15/2020
 # About: bb installer
 
-#OS=$(uname -o)
-OS="Android"
+OS=$(uname -o)
 
 case $OS in
 	"GNU/Linux")
