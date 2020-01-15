@@ -17,6 +17,7 @@ case $OS in
            if [[ -f "/data/data/com.termux/files/usr/bin/" ]]
 	   then
 	     echo "cp bb /data/data/com.termux/files/usr/bin/"
+	     cp bb /data/data/com.termux/files/usr/bin/
            else
              echo "termux dir not found."
              echo "copy bb to $HOME and use it as \"./bb\" "

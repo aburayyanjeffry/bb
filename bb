@@ -18,8 +18,8 @@ num=1
 
 divider=--------------------------------------------
 
-header="%2s %-8s %-15s %-20s\n"
-format="%2s %-8s %-15s %-20s\n"
+header="%2s %-10s %-15s %-15s\n"
+format="%2s %-10s %-15s %-15s\n"
 
 #### main function ####
 printf "$header" "##" "User" "Server I.P" "Description"
