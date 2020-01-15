@@ -3,6 +3,7 @@ bb is a ssh session manager for Linux or any OS which has bash
 
 # Download
 There are 2 ways to download bb:-
+
 Git clone
    ```
    git clone https://github.com/aburayyanjeffry/bb.git
@@ -22,7 +23,7 @@ Curl
    root 192.168.1.100 app-server1
    ```
 # Usage
-1. execute ./bb
+1. execute bb
 2. select the number or the desired server to ssh into it
 
 
