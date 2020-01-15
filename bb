@@ -4,7 +4,15 @@
 # About: A ssh session manager for Linux
 
 #### global variable ####
-server="./.servers.lst"
+#get server list from home directory
+if [[ -f "$HOME/.servers.lst" ]];
+then
+  server="$HOME/.servers.lst"
+else
+  echo "$HOME/.servers.lst does not exist. Please create one"
+  exit
+fi
+
 srvArray+=(x)
 num=1
 
