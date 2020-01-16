@@ -13,6 +13,25 @@ else
   exit
 fi
 
+#check if user grep any variable from the servers.lst
+#clear nuserver
+> $HOME/.nuserver.lst
+
+if [[ -n "$1" ]];
+then 
+  grep $1 $server > $HOME/.nuserver.lst 
+else
+  cp -f $HOME/.servers.lst $HOME/.nuserver.lst 	
+fi
+nuserver="$HOME/.nuserver.lst"
+
+#if file is empty the grep is finding something that doesn't exist
+if [[ ! -s "$nuserver" ]];
+then
+   echo "$1 does not exists"
+   exit
+fi
+
 srvArray+=(x)
 num=1
 
@@ -26,11 +45,10 @@ printf "$header" "##" "User" "Server I.P" "Description"
 echo $divider
 while IFS=" " read -r user server_ip desc
 do
-	#echo "$num $count user = $user server = $server_ip desc = $desc"
 	printf "$format" $num $user $server_ip $desc
 	srvArray+=($user@$server_ip)
 	((num++))
-done <"$server"
+done < "$nuserver"
 
 echo
 read -p "Enter the number or q to quit  : " nsNum
