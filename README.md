@@ -23,7 +23,7 @@ Curl
    root 192.168.1.100 app-server1
    ```
 # Usage
-1. execute bb or bb <something to be grep>
+1. execute bb or bb \<something to be grep\>
 2. select the number or the desired server to ssh into i
 
 
